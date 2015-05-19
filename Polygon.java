@@ -40,6 +40,6 @@ public class Polygon
      * @return Perimeter of the polygon
      */
     public double getPerimeter() {
-        return 0.0;     // Nothing to compute until we know what kind of polygon we have
+        return sides * sideLength;
     }
 }

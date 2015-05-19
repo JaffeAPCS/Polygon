@@ -44,7 +44,7 @@ public class PolygonTest
     public void testGetPerimeter()
     {
         Polygon polygon1 = new Polygon(3, 5);
-        assertEquals(0.0, polygon1.getPerimeter(), 0.1);
+        assertEquals(15.0, polygon1.getPerimeter(), 0.1);
     }
 
     @Test
