@@ -11,9 +11,12 @@ public class Polygon
      * Instance variables for the class.
      * We'll store the number of sides, and the 
      * length of each side here
+     * The "protected" keyword means that sides and sideLength will be visible to
+     * classes that extend Polygon, but they won't be visible to programs
+     * that instantiate an instance of Polygon
      */
-    private final int sides;
-    private final double sideLength;
+    protected final int sides;
+    protected final double sideLength;
     
     /**
      * Constructor for this class
@@ -36,7 +39,9 @@ public class Polygon
     
     /**
      * Computes the perimeter of the polygon based on the number of sides
-     * and the length of each side.
+     * and the length of each side.  getPerimeter won't have to be overridden
+     * because computing the perimeter is always done the same way no matter
+     * how many sides the Polygon has
      * @return Perimeter of the polygon
      */
     public double getPerimeter() {
