@@ -47,12 +47,6 @@ public class PolygonTest
         assertEquals(15.0, polygon1.getPerimeter(), 0.1);
     }
 
-    @Test
-    public void testGetArea()
-    {
-        Polygon polygon1 = new Polygon(5, 3);
-        assertEquals(0, polygon1.getArea(), 0.1);
-    }
 }
 
 
